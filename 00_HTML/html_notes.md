@@ -330,3 +330,7 @@ body{
 ## 0.11 HTML Semantics
 
 [semantics](./semantics.html)
+
+## 0.12 HTML Forms
+
+[forms](./forms.html)

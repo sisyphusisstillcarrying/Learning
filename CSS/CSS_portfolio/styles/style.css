@@ -1,0 +1,63 @@
+/* slaying the dragon start his CSS files with this code below */
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+/* but this is already included in modern-normalize */
+
+:root{
+    --clr-dark: #000;
+    --clr-light: #fff;
+    --clr-slate400: oklch(0.709 0.01 56.259);
+    --clr-slate600: oklch(0.439 0 0);
+    --clr-slate800: oklch(0.452 0.211 324.591);
+    --clr-rose: oklch(0.586 0.253 17.585);
+    --clr-indigo: oklch(0.585 0.233 277.117);
+}
+
+*{
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    /* if we fix the line height as 1.5 then it will work with a size like 1 rem but when we use 2rem it feels too much so we use calc() function to have a responsive font space */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* this will make the scroll smooth */
+}
+
+body {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+    /* this will make the image unselectable */
+}
+/* they are all inline elements */
+
+button{
+    display: inline-block;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a{
+    color: var(--clr-rose);
+}
+
+strong {
+    color: var(--clr-indigo);
+}
